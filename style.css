@@ -137,6 +137,14 @@ div form input {
     color: whitesmoke;
     width: 17.5rem;
 }
+/* tirando a borda de quando clica no input */
+div form input:focus {
+    outline: 0;
+}
+
+/* div form:active {
+    border: 1px solid var(--yellow);
+} */
 
 ::placeholder {
     font: 500 0.85rem var(--text-font);
@@ -152,29 +160,50 @@ div form img.lock {
     margin-right: 0.60rem;
 }
 
-div form img.hidden {
+div form button img.hidden {
     margin-right: 0.85rem;
+}
+
+div form button {
+    background-color: transparent;
+    border: none;
 }
 
 /* CHECKBOX */
 
 div.checkbox {
     margin-top: 1.25rem;
-    margin-left: 1.25rem;
+    margin-left: 0.8rem;
 
     display: flex;
 }
 
-div.checkbox button {
-    width: 1.25rem;
-    height: 1.25rem;
-    background: transparent;
-
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
+div.checkbox input {
+    display: none;
 }
 
-div.checkbox p {
+div.checkbox input + label:before {
+    content: "";
+    width: 1.25rem;
+    height: 1.25rem;
+
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-bottom: 0.3rem;
+    margin-right: 0.35rem;
+}
+
+div.checkbox input:checked + label:before {
+    background-color: var(--yellow);
+    background-image: url(assets/check.svg);
+}
+
+div.checkbox label {
     font: 400 1rem var(--text-font);
     color: var(--text-color);
     
@@ -185,6 +214,7 @@ div.checkbox p {
 div.checkbox a {
     font: 600 1rem var(--title-font);
     color: var(--yellow);
+    margin-top: 0.15rem; /* pra alinhar o checkbox */
 }
 
 /* BUTTON */

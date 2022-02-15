@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="script.js"></script>
     
 </head>
 <body>
@@ -32,13 +35,13 @@
         <h2>Senha</h2>
         <form action="#">
             <img src="assets/lock.svg" alt="Password" class="lock">
-            <input type="text" placeholder="Digite sua senha">
-            <img src="assets/eye.svg" alt="Hidden password" class="hidden">
+            <input type="password" placeholder="Digite sua senha" id="password">
+            <button onclick="showPassword()"><img src="assets/eye.svg" alt="Hidden password" class="hidden"></button>
         </form>
     </div>
     <div class="checkbox">
-        <button class="checkbox"></button>
-        <p>Lembre-me</p>
+        <input type="checkbox" id="checkbox-1" class="checkbox">
+        <label for="checkbox-1">Lembre-me</label>
         <a href="#">Esqueci minha senha</a>
     </div>
     <div class="button">
