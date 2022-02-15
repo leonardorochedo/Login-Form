@@ -38,6 +38,9 @@ body {
 
     --title-color: #D4CCB6;
     --text-color: #AFB6C2;
+
+    --border-color: #868686;
+    --yellow: #FFC632;
 }
 
 /*********    HEADER    ***************/
@@ -113,9 +116,113 @@ div.password {
 }
 
 div form {
+    margin-top: 0.5rem;
+
+    border: 1px solid;
+    border-color: var(--border-color);
+    border-radius: 5px;
+    align-items: center;
+
+    width: 20.93rem;
+    height: 2.75rem;
+
     display: flex;
+}
+
+div form input {
+    background-color: var(--body-color);
+    border: none;
+    
+    font: 500 1rem var(--text-font);
+    color: whitesmoke;
+    width: 17.5rem;
+}
+
+::placeholder {
+    font: 500 0.85rem var(--text-font);
 }
 
 div form img {
     width: 1.25rem;
+}
+
+div form img.mail,
+div form img.lock {
+    margin-left: 0.75rem;
+    margin-right: 0.60rem;
+}
+
+div form img.hidden {
+    margin-right: 0.85rem;
+}
+
+/* CHECKBOX */
+
+div.checkbox {
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+
+    display: flex;
+}
+
+div.checkbox button {
+    width: 1.25rem;
+    height: 1.25rem;
+    background: transparent;
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+div.checkbox p {
+    font: 400 1rem var(--text-font);
+    color: var(--text-color);
+    
+    margin-left: 0.35rem;
+    margin-right: 4rem;
+}
+
+div.checkbox a {
+    font: 600 1rem var(--title-font);
+    color: var(--yellow);
+}
+
+/* BUTTON */
+
+div.button {
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+
+    display: flex;
+}
+
+div.button button {
+    width: 20.87rem;
+    height: 3.18rem;
+
+    background-color: var(--yellow);
+
+    border: none;
+    border-radius: 5px;
+
+    font: 600 1.15rem var(--title-font);
+    color: #473404;
+    letter-spacing: 0.015em;
+}
+
+/* REGISTER */
+
+div.register {
+    margin-top: 0.87rem;
+    margin-left: 4.3rem;
+}
+
+div.register p {
+    font: 400 1rem var(--title-font);
+    color: var(--yellow);
+}
+
+div.register p span {
+    font: 600 1rem var(--title-font);
 }
