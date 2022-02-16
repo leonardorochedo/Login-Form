@@ -141,7 +141,7 @@ div form input {
 div form input:focus {
     outline: 0;
 }
-/* sufoco do krai pra fzr isso */
+/* colocando a borda amarela pra quando focar no form */
 div form:focus-within {
     border: 1px solid var(--yellow);
     transition: 0.3s;
@@ -171,7 +171,7 @@ div form button {
 }
 
 img#nofocus {
-    opacity: 0;
+    opacity: 1;
     position: absolute;
 }
 
@@ -180,10 +180,6 @@ img#focus {
     position: relative;
 }
 
-img#focus:active {
-    opacity: 1;
-    position: relative;
-}
 /* CHECKBOX */
 
 div.checkbox {

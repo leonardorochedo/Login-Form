@@ -7,6 +7,16 @@ function showPassword() {
     }
 }
 
+// const input = document.getElementsByClassName('.input')
+
+// if (input == document.onfocus) {
+//     console.log("focado")
+// } else {
+//     console.log("nao focado")
+// }
+
+
+
 // const form = document.querySelectorAll("#forms")
 
 // if (form === document.activeElement) {
@@ -15,11 +25,11 @@ function showPassword() {
 //     console.log("sem foco");
 // }
 
-let element = document.querySelectorAll("#forms")
-let focused = document.hasFocus(element)
-console.log(focused)
-if (focused === true) {
-    console.log("Está focado")
-} else {
-    console.log("Não tem foco")
-}
+// let element = document.querySelectorAll("#forms")
+// let focused = document.hasFocus(element)
+// console.log(focused)
+// if (focused === true) {
+//     console.log("Está focado")
+// } else {
+//     console.log("Não tem foco")
+// }
