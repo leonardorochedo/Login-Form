@@ -141,10 +141,11 @@ div form input {
 div form input:focus {
     outline: 0;
 }
-
-/* div form:active {
+/* sufoco do krai pra fzr isso */
+div form:focus-within {
     border: 1px solid var(--yellow);
-} */
+    transition: 0.3s;
+}
 
 ::placeholder {
     font: 500 0.85rem var(--text-font);
@@ -169,6 +170,20 @@ div form button {
     border: none;
 }
 
+img#nofocus {
+    opacity: 0;
+    position: absolute;
+}
+
+img#focus {
+    opacity: 0;
+    position: relative;
+}
+
+img#focus:active {
+    opacity: 1;
+    position: relative;
+}
 /* CHECKBOX */
 
 div.checkbox {
