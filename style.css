@@ -117,6 +117,7 @@ div h2 {
 
 div.email,
 div.password {
+    position: relative;
     /* margin-left: 1.25rem; */ /* responsive center */
 }
 
@@ -149,14 +150,34 @@ div form input {
     font: 500 1rem var(--text-font);
     color: whitesmoke;
     width: 17.5rem;
+    padding-left: 10px;
 }
 /* tirando a borda de quando clica no input */
 div form input:focus {
     outline: 0;
 }
 /* colocando a borda amarela pra quando focar no form */
-div form:focus-within {
+#form-email  {
+    padding-left: 30px;
+    background: url(assets/mail.svg) no-repeat scroll 10px 11px;
+}
+
+#form-email:focus-within  {
     border: 1px solid var(--yellow);
+    content: "";
+    background: url(assets/mail-focus.svg) no-repeat scroll 10px 11px;
+    transition: 0.3s;
+}
+
+#form-password  {
+    padding-left: 30px;
+    background: url(assets/lock.svg) no-repeat scroll 10px 11px;
+}
+
+#form-password:focus-within  {
+    border: 1px solid var(--yellow);
+    content: "";
+    background: url(assets/lock-focus.svg) no-repeat scroll 10px 11px;
     transition: 0.3s;
 }
 
