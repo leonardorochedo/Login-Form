@@ -28,6 +28,12 @@ body {
     background-color: var(--body-color);
 }
 
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /**********     VARIABLES       *****************/
 
 :root {
@@ -46,10 +52,10 @@ body {
 /*********    HEADER    ***************/
 
 header div.header {
-    margin-top: 2.5rem;
-    margin-left: 1.25rem;
-    margin-right: 1.31rem;
-    /* margin-bottom: 40.62rem; */
+    margin-top: 2rem;
+    /* margin-left: 0rem; */ /* responsive center */
+    /* margin-right: 1.31rem; */ /* responsive center */
+    /* margin-bottom: 40.62rem; */ /* responsive center */
 
     display: flex;
 }
@@ -57,6 +63,8 @@ header div.header {
 header div.header img.logo { 
     width: 7.18rem;
     height: 1.75rem;
+    
+    margin-right: 13rem; /* responsive center */
 
     display: flex;
 }
@@ -64,8 +72,9 @@ header div.header img.logo {
 /*********** **************/
 
 div.info-login {
-    margin-left: 1.25rem;
-    margin-top: 2.25rem;
+    /* margin-left: 1.25rem; */ /* responsive center */
+    margin-top: 2.25rem; /* responsive center */
+    margin-right: 7rem;
 
     text-align: inherit;
     display: flex;
@@ -74,6 +83,7 @@ div.info-login {
 div.info-login img.login {
     width: 2rem;
     height: 2rem;
+    margin-right: 0.5rem; /* responsive center */
     
     display: flex;
 }
@@ -81,7 +91,8 @@ div.info-login img.login {
 div.info-login h1 {
     font: 600 1.5rem var(--title-font);
     color: var(--title-color);
-    margin-left: 0.62rem;
+    /* margin-left: 0.62rem; */ /* responsive center */
+    margin-right: 1rem; /* responsive center */
 
     display: flex;
 }
@@ -92,7 +103,9 @@ div.info-login p {
 
     position: absolute;
     display: flex;
+
     margin-top: 2.68rem;
+    margin-left: 0.5rem; /* responsive center */
 }
 
 /*   FORMS   */
@@ -104,7 +117,7 @@ div h2 {
 
 div.email,
 div.password {
-    margin-left: 1.25rem;
+    /* margin-left: 1.25rem; */ /* responsive center */
 }
 
 div.email {
@@ -184,7 +197,8 @@ img#focus {
 
 div.checkbox {
     margin-top: 1.25rem;
-    margin-left: 0.8rem;
+    /* margin-left: 0.8rem; */ /* responsive center */
+    margin-right: 0.4rem; /* responsive center */
 
     display: flex;
 }
@@ -232,8 +246,9 @@ div.checkbox a {
 
 div.button {
     margin-top: 1.25rem;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+    /* margin-left: 1.25rem; */ /* responsive center */
+    /* margin-right: 1.25rem; */ /* responsive center */
+    justify-content: center; /* responsive center */
 
     display: flex;
 }
@@ -255,8 +270,8 @@ div.button button {
 /* REGISTER */
 
 div.register {
-    margin-top: 0.87rem;
-    margin-left: 4.3rem;
+    margin-top: 0.9rem;
+    /* margin-left: 4.3rem; */
 }
 
 div.register p {
