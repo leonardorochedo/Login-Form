@@ -53,9 +53,6 @@ div.container {
 
 header div.header {
     margin-top: 2rem;
-    /* margin-left: 0rem; */ /* responsive center */
-    /* margin-right: 1.31rem; */ /* responsive center */
-    /* margin-bottom: 40.62rem; */ /* responsive center */
 
     display: flex;
 }
@@ -64,7 +61,7 @@ header div.header img.logo {
     width: 7.18rem;
     height: 1.75rem;
     
-    margin-right: 13rem; /* responsive center */
+    margin-right: 13rem;
 
     display: flex;
 }
@@ -72,8 +69,7 @@ header div.header img.logo {
 /*********** **************/
 
 div.info-login {
-    /* margin-left: 1.25rem; */ /* responsive center */
-    margin-top: 2.25rem; /* responsive center */
+    margin-top: 2.25rem;
     margin-right: 7rem;
 
     text-align: inherit;
@@ -83,7 +79,7 @@ div.info-login {
 div.info-login img.login {
     width: 2rem;
     height: 2rem;
-    margin-right: 0.5rem; /* responsive center */
+    margin-right: 0.5rem;
     
     display: flex;
 }
@@ -91,8 +87,7 @@ div.info-login img.login {
 div.info-login h1 {
     font: 600 1.5rem var(--title-font);
     color: var(--title-color);
-    /* margin-left: 0.62rem; */ /* responsive center */
-    margin-right: 1rem; /* responsive center */
+    margin-right: 1rem;
 
     display: flex;
 }
@@ -105,7 +100,7 @@ div.info-login p {
     display: flex;
 
     margin-top: 2.68rem;
-    margin-left: 0.5rem; /* responsive center */
+    margin-left: 0.5rem;
 }
 
 /*   FORMS   */
@@ -118,7 +113,6 @@ div h2 {
 div.email,
 div.password {
     position: relative;
-    /* margin-left: 1.25rem; */ /* responsive center */
 }
 
 div.email {
@@ -152,16 +146,19 @@ div form input {
     width: 17.5rem;
     padding-left: 10px;
 }
+
 /* tirando a borda de quando clica no input */
 div form input:focus {
     outline: 0;
 }
+
 /* colocando a borda amarela pra quando focar no form */
 #form-email  {
     padding-left: 30px;
     background: url(assets/mail.svg) no-repeat scroll 10px 11px;
 }
 
+/* mudando o svg de quando focar no form */
 #form-email:focus-within  {
     border: 1px solid var(--yellow);
     content: "";
@@ -174,6 +171,7 @@ div form input:focus {
     background: url(assets/lock.svg) no-repeat scroll 10px 11px;
 }
 
+/* mudando o svg de quando focar no form */
 #form-password:focus-within  {
     border: 1px solid var(--yellow);
     content: "";
@@ -185,41 +183,28 @@ div form input:focus {
     font: 500 0.85rem var(--text-font);
 }
 
-div form img {
-    width: 1.25rem;
-}
-
-div form img.mail,
-div form img.lock {
-    margin-left: 0.75rem;
-    margin-right: 0.60rem;
-}
-
-div form button img.hidden {
-    margin-right: 0.85rem;
-}
-
 div form button {
+    background: url(assets/eye-off.svg) no-repeat scroll;
     background-color: transparent;
+
     border: none;
+    content: "";
+
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.85rem
 }
 
-img#nofocus {
-    opacity: 1;
-    position: absolute;
-}
-
-img#focus {
-    opacity: 0;
-    position: relative;
+div form button.text {
+    background: url(assets/eye.svg) no-repeat scroll;
+    transition: 0.3s;
 }
 
 /* CHECKBOX */
 
 div.checkbox {
     margin-top: 1.25rem;
-    /* margin-left: 0.8rem; */ /* responsive center */
-    margin-right: 0.4rem; /* responsive center */
+    margin-right: 0.4rem;
 
     display: flex;
 }
@@ -232,6 +217,7 @@ div.checkbox input + label:before {
     content: "";
     width: 1.25rem;
     height: 1.25rem;
+    cursor: pointer;
 
     background-color: transparent;
     border: 1px solid var(--border-color);
@@ -260,16 +246,14 @@ div.checkbox label {
 div.checkbox a {
     font: 600 1rem var(--title-font);
     color: var(--yellow);
-    margin-top: 0.15rem; /* pra alinhar o checkbox */
+    margin-top: 0.15rem;
 }
 
 /* BUTTON */
 
 div.button {
     margin-top: 1.25rem;
-    /* margin-left: 1.25rem; */ /* responsive center */
-    /* margin-right: 1.25rem; */ /* responsive center */
-    justify-content: center; /* responsive center */
+    justify-content: center;
 
     display: flex;
 }
@@ -288,11 +272,15 @@ div.button button {
     letter-spacing: 0.015em;
 }
 
+div.button button:hover {
+    background-color: #fcb21f;
+    transition: 0.3s;
+}
+
 /* REGISTER */
 
 div.register {
-    margin-top: 0.9rem;
-    /* margin-left: 4.3rem; */
+    margin-top: 1rem;
 }
 
 div.register p {

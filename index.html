@@ -28,18 +28,14 @@
     <div class="email">
         <h2>E-mail</h2>
         <form id="form-email" action="#">
-            <!-- <img src="assets/mail.svg" alt="Email" class="mail" id="nofocus">
-            <img src="assets/mail-focus.svg" alt="Email" class="mail" id="focus"> -->
             <input type="text" placeholder="Digite seu e-mail" class="input">
         </form>
     </div>
     <div class="password">
         <h2>Senha</h2>
         <form id="form-password" action="#">
-            <!-- <img src="assets/lock.svg" alt="Password" class="lock" id="nofocus">
-            <img src="assets/lock-focus.svg" alt="Password" class="lock" id="focus"> -->
             <input type="password" placeholder="Digite sua senha" class="input" id="password">
-            <button onclick="showPassword()"><img src="assets/eye.svg" alt="Hidden password" class="hidden"></button>
+            <button onclick="showPassword(), changeIcon()" id="button" class="password"></button>
         </form>
     </div>
     <div class="checkbox">

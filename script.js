@@ -7,29 +7,11 @@ function showPassword() {
     }
 }
 
-// const input = document.getElementsByClassName('.input')
-
-// if (input == document.onfocus) {
-//     console.log("focado")
-// } else {
-//     console.log("nao focado")
-// }
-
-
-
-// const form = document.querySelectorAll("#forms")
-
-// if (form === document.activeElement) {
-//     form.
-// } else {
-//     console.log("sem foco");
-// }
-
-// let element = document.querySelectorAll("#forms")
-// let focused = document.hasFocus(element)
-// console.log(focused)
-// if (focused === true) {
-//     console.log("Está focado")
-// } else {
-//     console.log("Não tem foco")
-// }
+function changeIcon() {
+    let button = document.getElementById("button")
+    if (button.className == "password") {
+        button.className = "text"
+    } else {
+        button.className = "password"
+    }
+}
