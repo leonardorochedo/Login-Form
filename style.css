@@ -281,6 +281,7 @@ div.button button:hover {
 
 div.register {
     margin-top: 1rem;
+    margin-left: 3rem;
 }
 
 div.register p {
@@ -328,18 +329,165 @@ header div.header img.logo {
 
 div.containertwo {
     background-color: #24221F;
-    width: 40vw;
-    height: 65vh;
+    width: 35vw;
+    height: 70vh;
     border: none;
     border-radius: 4px;
+    padding: auto;
 
-    margin-top: 12vh;
-    margin-left: 5vw;
+    margin-top: 8vh;
+    margin-left: 8vw;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+div.info-login {
+    margin-top: 0vw;
+}
+
+div.register {
+    margin-left: 0rem;
+}
+
+}
+
+@media (min-width: 1500px) {
+
+div.info-login h1 {
+    font: 600 2.25vw var(--title-font);
+}
+    
+div.info-login img.login {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+    
+div.info-login p {
+    font: 500 1.15vw var(--text-font);
+    margin-top: 4rem;
+} 
+    
+div h2 {
+    font: 600 1.5vw var(--text-font);
+    margin-bottom: 0.75vw;
+}
+
+div.email {
+    margin-top: 4vw;
+}
+
+div.password {
+    margin-top: 2vw;
+}
+
+div form {
+    width: 24vw;
+    height: 6vh;
+}
+    
+div form input {
+    width: 90%;
+    font: 500 1.5rem var(--text-font);
+    padding-left: 27px;
+}
+
+#form-email  {
+    padding-left: 30px;
+    background: url(assets/mail.svg) no-repeat scroll 13px 15px;
+    background-size: 2rem;
+}
+
+/* mudando o svg de quando focar no form */
+#form-email:focus-within  {
+    border: 1px solid var(--yellow);
+    content: "";
+    background: url(assets/mail-focus.svg) no-repeat scroll 13px 15px;
+    background-size: 2rem;
+    transition: 0.3s;
+}
+
+#form-password  {
+    padding-left: 30px;
+    background: url(assets/lock.svg) no-repeat scroll 13px 15px;
+    background-size: 2rem;
+}
+
+/* mudando o svg de quando focar no form */
+#form-password:focus-within  {
+    border: 1px solid var(--yellow);
+    content: "";
+    background: url(assets/lock-focus.svg) no-repeat scroll 13px 15px;
+    background-size: 2rem;
+    /* width: 3rem;
+    height: 3rem; */
+    transition: 0.3s;
+}
+
+div form button {
+    background: url(assets/eye-off.svg) no-repeat scroll;
+    background-size: 2rem;
+    background-color: transparent;
+    border: none;
+    content: "";
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 0.85rem;
+}
+
+div form button.text {
+    background: url(assets/eye.svg) no-repeat scroll;
+    background-size: 2rem;
+    background-color: transparent;
+    border: none;
+    content: "";
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 0.85rem;
+    transition: 0.3s;
+}
+
+::placeholder {
+    font: 500 1.15rem var(--text-font);
+}
+
+div.checkbox {
+    margin-top: 1.5vw;
+}
+
+div.checkbox input + label:before {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    background-size: 1.5rem;
+}
+
+div.checkbox label {
+    font: 400 1.15vw var(--text-font);
+}
+
+div.checkbox a {
+    font: 600 1.15vw var(--title-font);
+}
+
+div.button button {
+    margin-top: 1vw;
+    width: 20vw;
+    height: 6vh;
+}
+
+div.register {
+    margin-top: 1.5vw;
+}
+
+div.register p {
+    font: 400 1.15vw var(--title-font);
+}
+
+div.register p span {
+    font: 600 1.15vw var(--title-font);
+}
 
 }
