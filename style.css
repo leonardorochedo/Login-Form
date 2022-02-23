@@ -108,6 +108,7 @@ div.info-login p {
 div h2 {
     font: 600 1.2rem var(--text-font);
     color: var(--text-color);
+    margin-left: 0.5rem;
 }
 
 div.email,
@@ -125,6 +126,7 @@ div.password {
 
 div form {
     margin-top: 0.5rem;
+    margin-left: 0.5rem;
 
     border: 1px solid;
     border-color: var(--border-color);
