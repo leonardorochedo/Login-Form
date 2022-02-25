@@ -7,11 +7,11 @@ responsividade, não ficou perfeito tenho que praticar mais porém acredito que 
 <div align="center">
   <h2>Como ficou para Desktop</h2>
   
-![Desktop](https://user-images.githubusercontent.com/62243365/155731959-24e7ccae-3ae1-45d4-9f32-2ae8533d5359.png)
+![Desktop](https://user-images.githubusercontent.com/62243365/155244903-8fd691b4-7de1-4dd1-96f9-6cb6dbed5f09.png)
  </div>
 
 <div align="center">
   <h2>E Mobile</h2>
   
-![Mobile](https://user-images.githubusercontent.com/62243365/155731954-1a3180e9-3a87-483b-988b-c9cec3ff1e09.png)
+![Mobile](https://user-images.githubusercontent.com/62243365/155244907-c9f0b62c-6111-4a24-96f1-f7be86b88c0f.png)
 </div>
