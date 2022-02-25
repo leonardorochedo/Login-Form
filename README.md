@@ -8,6 +8,7 @@ responsividade, não ficou perfeito tenho que praticar mais porém acredito que 
   <h2>Como ficou para Desktop</h2>
   
 ![Desktop](https://user-images.githubusercontent.com/62243365/155244903-8fd691b4-7de1-4dd1-96f9-6cb6dbed5f09.png)
+ </div>
 
 <div align="center">
   <h2>E Mobile</h2>
